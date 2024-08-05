@@ -1,6 +1,6 @@
 ---
 
-- name: Auto Git
+- name: Auto git
   hosts: localhost
   tasks:
     - name: Add everything
