@@ -8,6 +8,6 @@
 
     - name: Commit everything
       command: git commit -m "auto git script"
-    
+
     - name: Push
       command: git push origin main
