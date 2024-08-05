@@ -4,7 +4,10 @@
   become: true
   tasks:
 
-  - name: install apache2 package
-    apt:
-      name: apache2
-    when: ansible_distribution in ["Debian", "Ubuntu"]
+  - name: install apache2 and php package
+    package:
+      name: 
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+      state: latest
+      update_cache: yes

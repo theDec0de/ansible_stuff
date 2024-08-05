@@ -7,7 +7,7 @@
       command: git add .
 
     - name: Commit everything
-      command: git commit -m "auto git script"
+      command: git commit -m "{{ commit_message }}"
 
     - name: Push
       command: git push origin main
