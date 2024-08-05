@@ -1,0 +1,13 @@
+---
+
+- name: Auto Git
+  hosts: localhost
+  tasks:
+    - name: Add everything
+      command: git add .
+
+    - name: Commit everything
+      command: git commit -m "auto git script"
+    
+    - name: Push
+      command: git push origin main
